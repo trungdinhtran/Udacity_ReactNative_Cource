@@ -1,15 +1,18 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const name = 'animal'
+const name = 'customer'
 
 const initialState = {
     list: {
-        animals: []
+        customers: []
     },
     form: {
         fields: {
-            common_name: null,
-            scientific_name: null,
+            id: null,
+            fullname: null,
+            lastname: null,
+            isActive: false,
+            regions: null,
         },
     },
 }
@@ -43,7 +46,7 @@ const reducers = {
         // state.status = 
     },
     loadResult: (state, { payload }) => {
-        state.list.animals = payload
+        state.list.customer = payload
     },
 }
 

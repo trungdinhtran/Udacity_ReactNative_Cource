@@ -4,7 +4,7 @@ import * as actions from './reducers'
 
 export const useUpdateFields = () => {
   const dispatch = useDispatch()
-  const fields = useSelector(state => state.animal.form.fields)
+  const fields = useSelector(state => state.customer.form.fields)
 
   return {
     fields,
@@ -33,5 +33,5 @@ export const useListAnimals = () => {
     dispatch(actions.loadAnimals())
   }, [dispatch])
   
-  return useSelector(state => state.animal.list.animals)
+  return useSelector(state => state.customer.list.animals)
 }

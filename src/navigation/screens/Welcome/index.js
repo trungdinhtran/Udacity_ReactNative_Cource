@@ -8,18 +8,10 @@ export default function Welcome() {
   const navigation = useNavigation()
 
   return (
-    <SafeAreaView>
-      <ScrollView>
-        <View style={styles.container}>
-          <Text>This is the welcome screen</Text>
-          <TouchableOpacity onPress={() => navigation.navigate('Add Animal')}><Text>Press</Text></TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate('Animals')}><Text>List</Text></TouchableOpacity>
-        </View>
-
-        <Button title="Button" />
-        <TouchableOpacity><Text>TOUCHABLE OPACITY</Text></TouchableOpacity>
-        <Pressable><Text>PRESSABLE</Text></Pressable>
-      </ScrollView>
+    <SafeAreaView style={styles.container}>
+        <Text>Welcome to Customer Manager Plus</Text>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('List Regions')}><Text>Click to Continue...</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => {}}><Text>Clear Storage...</Text></TouchableOpacity>
     </SafeAreaView>
   );
 }

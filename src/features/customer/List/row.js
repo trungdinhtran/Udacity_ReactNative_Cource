@@ -4,13 +4,14 @@ import { useNavigation } from '@react-navigation/native'
 
 const Row = ({ item }) => {
     const { navigate } = useNavigation()
-
     return (
         <TouchableOpacity onPress={() => navigate('Edit', { customerID: item.id })}>
             <View key={item.id} style={{ borderWidth: 1, padding: 10, margin: 10 }}>
-                <Text key={'id'}>ID: {item.id}</Text>
-                <Text key={'fn'}>Common Name: {item.common_name}</Text>
-                <Text key={'ln'}>Scientific Name: {item.scientific_name}</Text>
+                <Text>ID: {item.id}</Text>
+                <Text>Common Name: {item.firstName}</Text>
+                <Text>Scientific Name: {item.lastName}</Text>
+                <Text>Common Name: {item.active}</Text>
+                <Text>Scientific Name: {item.region}</Text>
             </View>
         </TouchableOpacity>
     )

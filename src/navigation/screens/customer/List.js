@@ -1,12 +1,12 @@
 import React from 'react'
 import { ScrollView, SafeAreaView } from 'react-native'
-import List from '../../../features/animal/List'
+import ListCustomer from '../../../features/customer/List'
 
 // top level display component only - declares a view that will be part of navigation
-const NewScreen = () => (
+const ListCustomerScreen = () => (
   <SafeAreaView>
-    <List />
+    <ListCustomer />
   </SafeAreaView>
 )
 
-export default NewScreen
+export default ListCustomerScreen
